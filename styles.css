@@ -148,6 +148,11 @@ img.article-image {
   margin: auto;
 }
 
+.contact-text {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
 footer {
   background-size: cover;
 }
