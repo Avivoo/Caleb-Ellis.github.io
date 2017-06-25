@@ -201,7 +201,40 @@ footer {
   animation: react-logo-spin infinite 20s linear;
 }
 
+.aboutMeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.subtitle {
+  align-self: flex-start;
+  font-weight: 400;
+  border-bottom: 2px solid #009688;
+  margin-bottom: 10px;
+}
+
+.aboutMeImgContainer {
+  display: flex;
+  align-items: center;
+}
+
 @keyframes react-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media (max-width: 839px) and (min-width: 480px) {
+  .mdl-cell--4-col, .mdl-cell--4-col-tablet.mdl-cell--4-col-tablet {
+    width: calc(100% - 16px);
+  }
+  img.aboutMeImg {
+    width: auto;
+    height: auto;
+    max-height: 50vh;
+  }
+  .aboutMeImgContainer {
+    display: flex;
+    justify-content: center;
+  }
 }
