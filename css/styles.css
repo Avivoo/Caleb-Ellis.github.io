@@ -52,7 +52,7 @@
 
 .language-icon:hover {
   opacity: 1;
-  transform: translate(0,-3px);
+  transform: scale(1.1);
 }
 
 .language-icon-inner {
