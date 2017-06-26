@@ -7,3 +7,7 @@ $(function(){
     $(".mdl-layout__content").animate({scrollTop:position}, speed, "swing");
   });
 });
+
+$(window).on('load', function() {
+	$(".loader").fadeOut("slow");
+});
