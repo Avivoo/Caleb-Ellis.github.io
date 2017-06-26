@@ -6,16 +6,16 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  justify-content: center;
   height: 100vh;
   margin-top: -64px;
+  background-image: url("../images/14 - 113.png");
 }
 
 .sectionWrapper {
-  position: relative;
-  top: 64px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   box-sizing: border-box;
   height: 100vh;
 }
@@ -30,21 +30,18 @@ body {
 
 .btnWrapper {
   position: relative;
-  bottom: 72px;
   display: flex;
   justify-content: center;
 }
 
 .btnWrapperStart {
   position: relative;
-  bottom: 8px;
   display: flex;
   justify-content: center;
 }
 
 .title {
   position: relative;
-  top: 72px;
   text-align: center;
   margin: 0;
 }
@@ -215,7 +212,7 @@ img.article-image {
 
 .portfolio-max-width {
   max-width: 1200px;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .no-left-padding{
