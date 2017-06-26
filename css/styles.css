@@ -2,18 +2,51 @@ body {
   background-color: #f9f9f9;
 }
 
-#aboutMeWrapper {
+.startWrapper {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   height: 100vh;
-  justify-content: center;
   margin-top: -64px;
 }
 
+.sectionWrapper {
+  position: relative;
+  top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.endWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-bottom: -100px;
+}
+
 .btnWrapper {
+  position: relative;
+  bottom: 72px;
   display: flex;
   justify-content: center;
-  margin: -64px 0 64px 0;
+}
+
+.btnWrapperStart {
+  position: relative;
+  bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  position: relative;
+  top: 72px;
+  text-align: center;
+  margin: 0;
 }
 
 .mdl-button--fab.mdl-button--colored {
@@ -193,7 +226,11 @@ img.article-image {
   padding-top: 0;
 }
 
-.portfolio-contact .mdl-textfield {
+.mdl-textfield {
+  width: 100%;
+}
+
+.portfolio-contact {
   width: 100%;
 }
 
@@ -258,11 +295,11 @@ footer {
 }
 
 @media (max-width: 839px) {
-  #aboutMeWrapper {
+  .startWrapper,.sectionWrapper,.endWrapper {
     height: auto;
     margin: 0;
   }
-  .btnWrapper {
+  .btnWrapper, .btnWrapperStart, #redundant {
     display: none;
   }
   .aboutMeImgContainer {

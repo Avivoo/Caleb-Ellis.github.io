@@ -58,7 +58,7 @@
 
       <!-- About Me -->
 
-      <div id="aboutMeWrapper">
+      <div class="startWrapper">
         <div class="mdl-grid portfolio-max-width">
           <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
             <div id="header-img" class="aboutMeImgContainer mdl-card__media mdl-cell mdl-cell--12-col-tablet">
@@ -184,410 +184,362 @@
             </div>
           </div>
         </div>
+        <div class="btnWrapperStart">
+          <a class="scroll" href="#fullStack"><button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">expand_more</i></button></a>
+        </div>
       </div>
-      <div class="btnWrapper">
-        <a class="scroll" href="#portfolio"><button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">expand_more</i></button></a>
-      </div>
+
 
 
       <!-- Portfolio -->
 
       <!-- Front-End/Full-stack -->
 
-      <div id="portfolio" class="mdl-grid portfolio-max-width">
 
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://ce-react-chat.herokuapp.com/" target="_blank"><img class="article-image" src="images/chatapp.png" border="0" alt=""></a>
+      <div id="fullStack" class="sectionWrapper">
+        <div class="title mdl-typography--display-2-color-contrast">Full-Stack</div>
+        <div class="mdl-grid portfolio-max-width">
+
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://ce-react-chat.herokuapp.com/" target="_blank"><img class="article-image" src="images/chatapp.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">React Chat App</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              A real-time chat app built using React and Socket.io.<br>
+              TODO: use MongoDB for user list + room list; use Passport for user login/authentication; fix sign-in/out message layout.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon react-logo" src="images/react.svg" alt="react"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/nodejs.svg" alt="node.js"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/socket-io.svg" alt="socket.io"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://ce-react-chat.herokuapp.com/" target="_blank">Live Example</a>
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/socketio-chat-app" target="_blank">View Repo</a>
+            </div>
           </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">React Chat App</h2>
+
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://github.com/Caleb-Ellis/CS50x" target="_blank"><img class="article-image" src=" images/mashup.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Google Maps+News Mashup</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              This website lets users search for news articles based on a given location, clustered by nearest city. A search bar allows users to search for a particular city name or postcode, sorted by relevance.
+              Uses the Google News and Google Maps APIs. Part of Harvard's CS50x curriculum.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/python.svg" alt="Python"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/CS50x" target="_blank">View Repo</a>
+            </div>
           </div>
-          <div class="mdl-card__supporting-text">
-            A real-time chat app built using React and Socket.io.<br>
-            TODO: use MongoDB for user list + room list; use Passport for user login/authentication; fix sign-in/out message layout.
+
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://github.com/Caleb-Ellis/CS50x" target="_blank"><img class="article-image" src="images/finance.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Stock Trade Simulator</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              This website lets users buy and sell stocks using imaginary cash, where the financial data is derived from the Yahoo Finance API. Users can quote stock prices, track transaction history, and deposit cash.
+              Part of Harvard's CS50x curriculum.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/python.svg" alt="Python"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/CS50x" target="_blank">View Repo</a>
+            </div>
           </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon react-logo" src="images/react.svg" alt="react"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/nodejs.svg" alt="node.js"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/socket-io.svg" alt="socket.io"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://ce-react-chat.herokuapp.com/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/socketio-chat-app" target="_blank">View Repo</a>
-          </div>
+
         </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://caleb-ellis.github.io/simon-game/" target="_blank"><img class="article-image" src="images/simon.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Simon Game</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            A web version of the age-old memory game Simon. You must remember and repeat a series of button presses, while the speed increases with each
-            step. Features a "Strict Mode" - no errors allowed!<br>
-            TODO: fix mobile slowdown/layout.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/simon-game/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/simon-game" target="_blank">View Repo</a>
-          </div>
+        <div class="btnWrapper">
+          <a class="scroll" href="#frontEnd1"><button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">expand_more</i></button></a>
         </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://caleb-ellis.github.io/javascript-calculator/" target="_blank"><img class="article-image" src=" images/calculator.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Javascript Calculator</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            A simple web calculator made entirely in HTML5, CSS3 and Javascript (jQuery). Features chained operations, and a history log.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/javascript-calculator/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/javascript-calculator" target="_blank">View Repo</a>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://github.com/Caleb-Ellis/machine-learning-stanford" target="_blank"><img class="article-image" src=" images/neuralnetwork.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">MNIST Digit Classifier</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            This program takes a portion of the MNIST handwritten digit database (5000 entries) to train a neural network digit classifier. Utilises backpropagation to determine the gradient of the cost function.
-            Part of Stanford's Machine Learning curriculum, where data visualisation was provided.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper"><img class="tech-icon" src="images/matlab.png" alt="MATLAB"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/machine-learning-stanford" target="_blank">View Repo</a>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://caleb-ellis.github.io/pomodoro-timer/" target="_blank"><img class="article-image" src=" images/pomodoro.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Pomodoro Timer</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            A customisable pomodoro timer. Set a timer and a break to jumpstart your productivity!
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/pomodoro-timer/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/pomodoro-timer" target="_blank">View Repo</a>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://github.com/Caleb-Ellis/CS50x" target="_blank"><img class="article-image" src=" images/mashup.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Google Maps+News Mashup</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            This website lets users search for news articles based on a given location, clustered by nearest city. A search bar allows users to search for a particular city name or postcode, sorted by relevance.
-            Uses the Google News and Google Maps APIs. Part of Harvard's CS50x curriculum.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/python.svg" alt="Python"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/CS50x" target="_blank">View Repo</a>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://caleb-ellis.github.io/tictactoe-minimax/" target="_blank"><img class="article-image" src=" images/tictactoe.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">TicTacToe (Minimax)</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            A web version of Tic Tac Toe that utilises the minimax algorithm. This means you can never win - only draw!<br>
-            TODO: Implement minimax algorithm, lol.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/tictactoe-minimax/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/tictactoe-minimax" target="_blank">View Repo</a>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://github.com/Caleb-Ellis/CS50x" target="_blank"><img class="article-image" src="images/finance.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Stock Simulator</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            This website lets users buy and sell stocks using imaginary cash, where the financial data is derived from the Yahoo Finance API. Users can quote stock prices, track transaction history, and deposit cash.
-            Part of Harvard's CS50x curriculum.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/python.svg" alt="Python"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/CS50x" target="_blank">View Repo</a>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://caleb-ellis.github.io/weather-app/" target="_blank"><img class="article-image" src=" images/weather.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Weather App</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            A minimalist weather app that utilises the Open Weather API to draw forecasts. Features a Celsius to Fahrenheit converter and a 5-day forecast.<br>
-            TODO: Improve code to reduce slowdown, otherwise; add a loading screen.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/weather-app/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/weather-app" target="_blank">View Repo</a>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://caleb-ellis.github.io/twitch-api/" target="_blank"><img class="article-image" src=" images/twitch.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Twitch API Project</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            A simple exercise in using the Twitch API. Obtains twitch streamer information and displays it in list format, dependant on whether or not they are
-            online. Does not yet contain database functionality.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/twitch-api/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/twitch-api" target="_blank">View Repo</a>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://caleb-ellis.github.io/wikipedia-viewer/" target="_blank"><img class="article-image" src=" images/wikipedia.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Wikipedia Viewer</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            An exercise in using the Wikipedia API. Allows the search of Wikipedia articles in a search box, and the most relevant 10 articles are displayed. Also allows
-            the search for a random article.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/wikipedia-viewer/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/wikipedia-viewer" target="_blank">View Repo</a>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-            <a href="https://caleb-ellis.github.io/quote-generator/" target="_blank"><img class="article-image" src=" images/quote.png" border="0" alt=""></a>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Quote Generator</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            Randomly generates quotes from the Random Famous Quotes API. This app also uses the Twitter API to allow a quote to be tweeted.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/quote-generator/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/quote-generator" target="_blank">View Repo</a>
-          </div>
-        </div>
-
       </div>
 
+      <div id="frontEnd1" class="sectionWrapper">
+        <div class="title mdl-typography--display-2-color-contrast">Front-End</div>
+        <div class="mdl-grid portfolio-max-width">
 
-      <!-- APIs -->
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://caleb-ellis.github.io/simon-game/" target="_blank"><img class="article-image" src="images/simon.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Simon Game</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              A web version of the age-old memory game Simon. You must remember and repeat a series of button presses, while the speed increases with each
+              step. Features a "Strict Mode" - no errors allowed!<br>
+              TODO: fix mobile slowdown/layout.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/simon-game/" target="_blank">Live Example</a>
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/simon-game" target="_blank">View Repo</a>
+            </div>
+          </div>
 
-      <div id="portfolio" class="mdl-grid portfolio-max-width">
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://caleb-ellis.github.io/javascript-calculator/" target="_blank"><img class="article-image" src=" images/calculator.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Javascript Calculator</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              A simple web calculator made entirely in HTML5, CSS3 and Javascript (jQuery). Features chained operations, and a history log.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/javascript-calculator/" target="_blank">Live Example</a>
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/javascript-calculator" target="_blank">View Repo</a>
+            </div>
+          </div>
 
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Timestamp API</h2>
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://caleb-ellis.github.io/pomodoro-timer/" target="_blank"><img class="article-image" src=" images/pomodoro.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Pomodoro Timer</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              A customisable pomodoro timer. Set a timer and a break to jumpstart your productivity!
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/pomodoro-timer/" target="_blank">Live Example</a>
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/pomodoro-timer" target="_blank">View Repo</a>
+            </div>
           </div>
-          <div class="mdl-card__supporting-text">
-            Converts Unix or natural timestamps into a JSON object with both options.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/nodejs.svg" alt="node.js"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://ce-timestamp-microservice.herokuapp.com/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/timestamp-microservice" target="_blank">View Repo</a>
-          </div>
+
         </div>
-
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Request Header Parser API</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            Retrieves the IP address, language and operating system of the user's browser.
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/nodejs.svg" alt="node.js"></li>
-            </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://ce-rh-parser-microservice.herokuapp.com/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/rh-parser-microservice" target="_blank">View Repo</a>
-          </div>
+        <div class="btnWrapper">
+          <a class="scroll" href="#frontEnd2"><button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">expand_more</i></button></a>
         </div>
+      </div>
 
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">URL Shortener API</h2>
+      <div id="frontEnd2" class="sectionWrapper">
+        <div id="redundant" class="title mdl-typography--display-2-color-contrast">Front-End</div>
+        <div class="mdl-grid portfolio-max-width">
+
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://caleb-ellis.github.io/tictactoe-minimax/" target="_blank"><img class="article-image" src=" images/tictactoe.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">TicTacToe (Minimax)</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              A web version of Tic Tac Toe that utilises the minimax algorithm. This means you can never win - only draw!<br>
+              TODO: Implement minimax algorithm, lol.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/tictactoe-minimax/" target="_blank">Live Example</a>
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/tictactoe-minimax" target="_blank">View Repo</a>
+            </div>
           </div>
-          <div class="mdl-card__supporting-text">
-            Converts a URL into a 4-digit ID, similar to bit.ly. Due to the verbose nature of Heroku URLs, they're not much shorter. But... y'know, it's the thought that counts.
+
+
+
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://caleb-ellis.github.io/weather-app/" target="_blank"><img class="article-image" src=" images/weather.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Weather App</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              A minimalist weather app that utilises the Open Weather API to draw forecasts. Features a Celsius to Fahrenheit converter and a 5-day forecast.<br>
+              TODO: Improve code to reduce slowdown, otherwise; add a loading screen.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/weather-app/" target="_blank">Live Example</a>
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/weather-app" target="_blank">View Repo</a>
+            </div>
           </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <ul class="tech-icon-container">
-              <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/nodejs.svg" alt="node.js"></li>
-              <li class="language-icon-inner tech-icon-wrapper"><img class="tech-icon" src="images/mongo.png" alt="mongoDB"></li>
-            </ul>
+
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://caleb-ellis.github.io/quote-generator/" target="_blank"><img class="article-image" src=" images/quote.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Quote Generator</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Randomly generates quotes from the Random Famous Quotes API. This app also uses the Twitter API to allow a quote to be tweeted.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/html5.svg" alt="HTML5"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/css3.svg" alt="CSS3"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.svg" alt="Javascript"></li>
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://caleb-ellis.github.io/quote-generator/" target="_blank">Live Example</a>
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/quote-generator" target="_blank">View Repo</a>
+            </div>
           </div>
-          <div class="mdl-card__actions mdl-card--border mdl-card__end">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://ce-url-shortener.herokuapp.com/" target="_blank">Live Example</a>
-            <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/url-shortener" target="_blank">View Repo</a>
-          </div>
+
         </div>
+        <div class="btnWrapper">
+          <a class="scroll" href="#backEnd"><button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">expand_more</i></button></a>
+        </div>
+      </div>
 
+      <div id="backEnd" class="sectionWrapper">
+        <div class="title mdl-typography--display-2-color-contrast">Back-End</div>
+        <div class="mdl-grid portfolio-max-width">
+
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://github.com/Caleb-Ellis/url-shortener" target="_blank"><img class="article-image" src=" images/url-shortener.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">URL Shortener API</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Converts a URL into a 4-digit ID, similar to bit.ly. Due to the verbose nature of Heroku URLs, they're not much shorter. But... y'know, it's the thought that counts.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/nodejs.svg" alt="node.js"></li>
+                <li class="language-icon-inner tech-icon-wrapper"><img class="tech-icon" src="images/mongo.png" alt="mongoDB"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://ce-url-shortener.herokuapp.com/" target="_blank">Live Example</a>
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/url-shortener" target="_blank">View Repo</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+              <a href="https://github.com/Caleb-Ellis/machine-learning-stanford" target="_blank"><img class="article-image" src=" images/neuralnetwork.png" border="0" alt=""></a>
+            </div>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">MNIST Digit Classifier</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              This program takes a portion of the MNIST handwritten digit database (5000 entries) to train a neural network digit classifier. Utilises backpropagation to determine the gradient of the cost function.
+              Part of Stanford's Machine Learning curriculum, where data visualisation was provided.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="tech-icon-container">
+                <li class="language-icon-inner tech-icon-wrapper"><img class="tech-icon" src="images/matlab.png" alt="MATLAB"></li>
+              </ul>
+            </div>
+            <div class="mdl-card__actions mdl-card--border mdl-card__end">
+              <a class="repo-btn mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/Caleb-Ellis/machine-learning-stanford" target="_blank">View Repo</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="btnWrapper">
+          <a class="scroll" href="#contact"><button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">expand_more</i></button></a>
+        </div>
       </div>
 
 
       <!-- Contact -->
 
-      <div id="contact" class="mdl-grid portfolio-max-width portfolio-contact">
-        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Contact</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            <p class="contact-text">
-              Have a web development or programming problem you want solved? Let me help.
-            </p>
-            <form action="#" class="">
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
-                <label class="mdl-textfield__label" for="Name">Name...</label>
-                <span class="mdl-textfield__error">Letters and spaces only</span>
-              </div>
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="Email">
-                <label class="mdl-textfield__label" for="Email">Email...</label>
-              </div>
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
-                <label class="mdl-textfield__label" for="note">Enter note</label>
-              </div>
-              <p>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-                  Submit
-                </button>
+      <div class="endWrapper">
+        <div id="contact" class="mdl-grid portfolio-max-width portfolio-contact">
+          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Contact</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <p class="contact-text">
+                Have a web development or programming problem you want solved? Let me help.
               </p>
-            </form>
+              <form action="#" class="">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                  <label class="mdl-textfield__label" for="Name">Name...</label>
+                  <span class="mdl-textfield__error">Letters and spaces only</span>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="Email">
+                  <label class="mdl-textfield__label" for="Email">Email...</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
+                  <label class="mdl-textfield__label" for="note">Enter note</label>
+                </div>
+                <p>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+                    Submit
+                  </button>
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
