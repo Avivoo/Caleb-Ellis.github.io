@@ -2,6 +2,24 @@ body {
   background-color: #f9f9f9;
 }
 
+#aboutMeWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin-top: -64px;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  margin: -64px 0 64px 0;
+}
+
+.mdl-button--fab.mdl-button--colored {
+  background-color: #009688;
+}
+
 .tech-icon {
   margin: auto 3px;
   height: 2.5em;
@@ -236,6 +254,16 @@ footer {
     width: auto;
     height: auto;
     max-height: 50vh;
+  }
+}
+
+@media (max-width: 839px) {
+  #aboutMeWrapper {
+    height: auto;
+    margin: 0;
+  }
+  .btnWrapper {
+    display: none;
   }
   .aboutMeImgContainer {
     display: flex;
