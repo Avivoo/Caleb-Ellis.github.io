@@ -10,6 +10,10 @@ body {
   height: 100vh;
   margin-top: -64px;
   background-image: url("../images/14 - 113.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sectionWrapper {
@@ -18,6 +22,7 @@ body {
   justify-content: center;
   box-sizing: border-box;
   height: 100vh;
+  padding-bottom: 32px;
 }
 
 .endWrapper {
@@ -47,7 +52,7 @@ body {
 }
 
 .mdl-button--fab.mdl-button--colored {
-  background-color: #009688;
+  background-color: #3ddadb;
 }
 
 .tech-icon {
@@ -130,7 +135,7 @@ body {
 }
 
 .mdl-layout__drawer {
-  background-color: #009688;
+  background-color: #3ddadb;
 }
 
 .mdl-layout__drawer .mdl-navigation,
@@ -139,8 +144,12 @@ body {
   color: #fff;
 }
 
+.mdl-layout__header {
+  background-color: #3ddadb
+}
+
 .mdl-layout__header-row .mdl-navigation__link {
-  opacity: 0.5;
+  opacity: 0.7;
   position: relative;
   text-decoration: none;
   transition: all .2s ease-out;
@@ -266,7 +275,7 @@ footer {
 .subtitle {
   align-self: flex-start;
   font-weight: 400;
-  border-bottom: 2px solid #009688;
+  border-bottom: 2px solid #3ddadb;
   margin-bottom: 10px;
 }
 
@@ -292,6 +301,10 @@ footer {
 }
 
 @media (max-width: 839px) {
+  .startWrapper {
+    background-image: none;
+    background-attachment: scroll;
+  }
   .startWrapper,.sectionWrapper,.endWrapper {
     height: auto;
     margin: 0;
