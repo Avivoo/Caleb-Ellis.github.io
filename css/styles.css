@@ -95,6 +95,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
@@ -292,6 +293,15 @@ footer {
 .aboutMeImgContainer {
   display: flex;
   align-items: center;
+}
+
+.carouselCard {
+  width: calc(100% - 16px);
+  height: 580px;
+}
+
+.owl-carousel .owl-item .tech-icon-container img {
+  width: inherit;
 }
 
 @keyframes react-logo-spin {
