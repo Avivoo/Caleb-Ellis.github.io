@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f9f9;
+  background: #f9f9f9;
 }
 
 .loader {
@@ -29,10 +29,10 @@ body {
 .sectionWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   box-sizing: border-box;
   height: 100vh;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 
 .endWrapper {
@@ -156,7 +156,7 @@ body {
 }
 
 .mdl-layout__header {
-  background-color: #3ddadb
+  background-color: #3ddadb;
 }
 
 .mdl-layout__header-row .mdl-navigation__link {
@@ -259,6 +259,7 @@ img.article-image {
 .contact-text {
   font-size: 1.5em;
   font-weight: 400;
+  text-align: center;
 }
 
 .repo-btn {
@@ -271,6 +272,11 @@ footer {
 
 #header-img {
   background-color: #fff;
+}
+
+.aboutMeImg {
+  border-radius: 100%;
+  border: 3px solid #3ddadb;
 }
 
 .react-logo {
@@ -297,11 +303,15 @@ footer {
 
 .carouselCard {
   width: calc(100% - 16px);
-  height: 580px;
+  height: 570px;
 }
 
 .owl-carousel .owl-item .tech-icon-container img {
   width: inherit;
+}
+
+.owl-carousel.off {
+  display: block;
 }
 
 @keyframes react-logo-spin {
@@ -322,7 +332,6 @@ footer {
 
 @media (max-width: 839px) {
   .startWrapper {
-    background-image: none;
     background-attachment: scroll;
   }
   .startWrapper,.sectionWrapper,.endWrapper {
@@ -335,5 +344,8 @@ footer {
   .aboutMeImgContainer {
     display: flex;
     justify-content: center;
+  }
+  .mdl-typography--display-2, .mdl-typography--display-2-color-contrast {
+    font-size: 32px;
   }
 }
