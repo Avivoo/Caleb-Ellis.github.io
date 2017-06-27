@@ -247,7 +247,7 @@ img.article-image {
 }
 
 .portfolio-contact {
-  width: 100%;
+  width: calc(100% - 16px);
 }
 
 .portfolio-contact form {
