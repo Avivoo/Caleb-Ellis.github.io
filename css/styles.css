@@ -29,18 +29,8 @@ body {
 .sectionWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  height: 100vh;
-  padding: 32px 0;
-}
-
-.endWrapper {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  margin-bottom: -100px;
+  padding-bottom: 10px;
 }
 
 .btnWrapper {
@@ -59,8 +49,10 @@ body {
   position: relative;
   text-align: center;
   margin: 0 auto;
+  padding: 20px 0 5px 0;
   max-width: 1200px;
   border-bottom: 2px solid #3ddadb;
+  box-sizing: border-box;
 }
 
 .mdl-button--fab.mdl-button--colored {
