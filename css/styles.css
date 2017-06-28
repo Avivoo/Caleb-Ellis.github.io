@@ -2,6 +2,10 @@ body {
   background: #f9f9f9;
 }
 
+.mdl-card__end {
+  margin-top: auto;
+}
+
 .loader {
 	position: fixed;
 	left: 0px;
@@ -30,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .btnWrapper {
@@ -45,18 +49,45 @@ body {
   justify-content: center;
 }
 
+.btn{
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #37c8c8;
+  color: #fff;
+  transition: all .2s;
+}
+
+.btn:hover{
+  background-color: #37c8c8;
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.btn2{
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #37c8c8;
+  color: #37c8c8;
+  transition: all .2s;
+}
+
+.btn2:hover{
+  background-color: #37c8c8;
+  color: #fff;
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.mdl-button--fab.mdl-button--colored {
+  background-color: #37c8c8;
+}
+
 .title {
   position: relative;
   text-align: center;
   margin: 0 auto;
   padding: 20px 0 5px 0;
   max-width: 1200px;
-  border-bottom: 2px solid #3ddadb;
+  border-bottom: 2px solid #37c8c8;
   box-sizing: border-box;
-}
-
-.mdl-button--fab.mdl-button--colored {
-  background-color: #3ddadb;
 }
 
 .tech-icon {
@@ -140,7 +171,7 @@ body {
 }
 
 .mdl-layout__drawer {
-  background-color: #3ddadb;
+  background-color: #37c8c8;
 }
 
 .mdl-layout__drawer .mdl-navigation,
@@ -150,7 +181,7 @@ body {
 }
 
 .mdl-layout__header {
-  background-color: #3ddadb;
+  background-color: #37c8c8;
 }
 
 .mdl-layout__header-row .mdl-navigation__link {
@@ -270,7 +301,7 @@ footer {
 
 .aboutMeImg {
   border-radius: 100%;
-  border: 3px solid #3ddadb;
+  border: 3px solid #37c8c8;
 }
 
 .react-logo {
@@ -286,7 +317,7 @@ footer {
 .subtitle {
   align-self: flex-start;
   font-weight: 400;
-  border-bottom: 2px solid #3ddadb;
+  border-bottom: 2px solid #37c8c8;
   margin-bottom: 10px;
 }
 
