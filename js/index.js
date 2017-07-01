@@ -1,15 +1,45 @@
-$(function(){
-  $('a.scroll').click(function(){
-    var speed = 1000;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.get( 0 ).offsetTop;
-    $(".mdl-layout__content").animate({scrollTop:position}, speed, "swing");
+var allowAutoScroll = true;
+
+function scrollTo(id) {
+  var speed = 1000;
+  var href= id;
+  var target = $(href == "#" || href == "" ? 'html' : href);
+  var position = target.get( 0 ).offsetTop;
+  $(".mdl-layout__content").animate({scrollTop:position}, speed, "swing", function() {
+    allowAutoScroll = true;
   });
+  console.log(allowAutoScroll);
+}
+
+$('a.scroll').click(function(){
+  if (allowAutoScroll === true) {
+    allowAutoScroll = false;
+    scrollTo($(this).attr('href'));
+  }
+});
+
+$('#top').on('mousewheel', function(e) {
+  if (allowAutoScroll === true && e.deltaY <= 0) {
+    allowAutoScroll = false;
+    scrollTo('#aboutMe');
+  }
+});
+
+$('#aboutMe').on('mousewheel', function(e) {
+  if (allowAutoScroll === true && e.deltaY <= 0) {
+    allowAutoScroll = false;
+    scrollTo('#fullStack');
+  }
 });
 
 $(window).on('load', function() {
 	$(".loader").fadeOut("slow");
+  window.sr = ScrollReveal();
+  sr.reveal('.me', {
+    delay: 500,
+    duration: 500,
+    distance: '10vh'
+  }, 100);
 });
 
 $(document).ready(function(){

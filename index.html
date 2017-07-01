@@ -21,182 +21,160 @@
 
 <body>
   <div class="loader"></div>
-  <div id="aboutMe" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <div class="mdl-layout mdl-js-layout">
 
-
-    <!-- Header -->
-
-    <header class="mdl-layout__header">
-
-
-      <!-- Fixed Navigation Bar -->
-
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Caleb Ellis</span>
-        <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link scroll" href="#aboutMe">About Me</a>
-          <a class="mdl-navigation__link scroll" href="#fullStack">Portfolio</a>
-          <a class="mdl-navigation__link scroll" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-
-    <!-- Drawer Navigation Column -->
-
-    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-      <span class="mdl-layout-title">Caleb Ellis</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link scroll" href="#aboutMe">About Me</a>
-        <a class="mdl-navigation__link scroll" href="#fullStack">Portfolio</a>
-        <a class="mdl-navigation__link scroll" href="#contact">Contact</a>
-      </nav>
-    </div>
 
 
     <!-- Main Content -->
 
     <main class="mdl-layout__content">
 
+      <!-- Social Media Buttons -->
+
+      <ul class="social-buttons tech-icon-container">
+        <li id="github-icon" class="tech-icon-wrapper social">
+          <a href="https://github.com/Caleb-Ellis" target="_blank">
+            <img class="tech-icon" src="images/github.svg">
+          </a>
+        </li>
+        <div class="mdl-tooltip" data-mdl-for="github-icon">
+          GitHub
+        </div>
+        <li id="linkedin-icon" class="tech-icon-wrapper social">
+          <a href="https://www.linkedin.com/in/caleb-ellis/" target="_blank">
+            <img class="tech-icon" src="images/linkedin.svg">
+          </a>
+        </li>
+        <div class="mdl-tooltip" data-mdl-for="linkedin-icon">
+          LinkedIn
+        </div>
+        <li id="codepen-icon" class="tech-icon-wrapper social">
+          <a href="https://codepen.io/calebellis/" target="_blank">
+            <img class="tech-icon" src="images/codepen.png">
+          </a>
+        </li>
+        <div class="mdl-tooltip" data-mdl-for="codepen-icon">
+          Codepen
+        </div>
+        <li id="resume-icon" class="tech-icon-wrapper social">
+          <a href="" target="_blank">
+            <img class="tech-icon" src="images/resume.png">
+          </a>
+        </li>
+        <div class="mdl-tooltip" data-mdl-for="resume-icon">
+          Resume
+        </div>
+      </ul>
 
       <!-- About Me -->
 
-      <div class="startWrapper">
-        <div class="mdl-grid portfolio-max-width">
-          <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-            <div id="header-img" class="aboutMeImgContainer mdl-card__media mdl-cell mdl-cell--12-col-tablet">
-              <img class="aboutMeImg article-image" src="images/aboutme.jpg" border="0" alt="">
+      <div id="top" class="startWrapper">
+        <div class="me meBig mdl-typography--display-3-color-contrast">Caleb Ellis</div>
+        <div class="me mdl-typography--display-1-color-contrast">Web Developer</div>
+        <div class="me mdl-typography--display-1-color-contrast">London, UK</div>
+
+      </div>
+
+      <div id="aboutMe" class="startWrapper">
+        <div class="portfolio-max-width mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+          <div id="header-img" class="aboutMeImgContainer mdl-card__media mdl-cell mdl-cell--12-col-tablet">
+            <img class="aboutMeImg article-image" src="images/aboutme.jpg" border="0" alt="">
+          </div>
+          <div class="aboutMeContent mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__supporting-text no-left-padding">
+              <h2 class="subtitle mdl-card__title-text">About Me</h2>
+              <p>My name is Caleb Ellis, and I'm an aspiring Full Stack Software Engineer currently living in Brisbane, Australia. I have a keen interest in web development, machine learning, robotics, and data science.</p>
+
             </div>
-            <div class="aboutMeContent mdl-cell mdl-cell--8-col">
-              <div class="mdl-card__supporting-text no-left-padding">
-                <h2 class="subtitle mdl-card__title-text">About Me</h2>
-                <p>My name is Caleb Ellis, and I'm an aspiring Full Stack Software Engineer currently living in Brisbane, Australia. I have a keen interest in web development, machine learning, robotics, and data science.</p>
-                <ul class="tech-icon-container">
-                  <li id="github-icon" class="tech-icon-wrapper social">
-                    <a href="https://github.com/Caleb-Ellis" target="_blank">
-                      <img class="tech-icon" src="images/github.svg">
-                    </a>
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="github-icon">
-                    GitHub
-                  </div>
-                  <li id="linkedin-icon" class="tech-icon-wrapper social">
-                    <a href="https://www.linkedin.com/in/caleb-ellis/" target="_blank">
-                      <img class="tech-icon" src="images/linkedin.svg">
-                    </a>
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="linkedin-icon">
-                    LinkedIn
-                  </div>
-                  <li id="codepen-icon" class="tech-icon-wrapper social">
-                    <a href="https://codepen.io/calebellis/" target="_blank">
-                      <img class="tech-icon" src="images/codepen.png">
-                    </a>
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="codepen-icon">
-                    Codepen
-                  </div>
-                  <li id="resume-icon" class="tech-icon-wrapper social">
-                    <a href="" target="_blank">
-                      <img class="tech-icon" src="images/resume.png">
-                    </a>
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="resume-icon">
-                    Resume
-                  </div>
-                </ul>
-              </div>
-            <!--
-              <h2 class="mdl-card__title-text">Qualifications</h2>
-              <div class="mdl-card__supporting-text no-left-padding no-top-padding">
-                <ul>
-                  <li>Bachelor's Degree in Mechanical Engineering (Queensland University of Technology)</li>
-                  <li>Front-End Development Certificate (FreeCodeCamp)</li>
-                  <li>CS50x - Introduction to Computer Science (Harvard University)</li>
-                  <li>M101x - Introduction to MongoDB using the MEAN Stack (edX)</li>
-                  <li>Algorithms, Part I (Princeton University)</li>
-                  <li>Machine Learning (Stanford University)</li>
-                </ul>
-              </div>
-            -->
-              <div class="mdl-card__supporting-text no-left-padding no-top-padding">
-                <h2 class="subtitle mdl-card__title-text">Languages, Frameworks & Libraries</h2>
-                <ul class="tech-icon-container">
-                  <li id="html-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/html5.svg" alt="HTML5">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="html-icon">
-                    HTML5
-                  </div>
-                  <li id="css-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/css3.svg" alt="CSS3">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="css-icon">
-                    CSS3
-                  </div>
-                  <li id="js-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/js.png" alt="Javascript">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="js-icon">
-                    JavaScript/ES6
-                  </div>
-                  <li id="jquery-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/jquery.svg" alt="jQuery">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="jquery-icon">
-                    jQuery
-                  </div>
-                  <li id="react-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon react-logo" src="images/react.svg" alt="react">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="react-icon">
-                    React
-                  </div>
-                  <li id="node-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/nodejs.svg" alt="node.js">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="node-icon">
-                    NodeJS + Express
-                  </div>
-                  <li id="python-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/python.svg" alt="Python">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="python-icon">
-                    Python
-                  </div>
-                  <li id="mongo-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/mongo.png" alt="mongoDB">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="mongo-icon">
-                    MongoDB + Mongoose
-                  </div>
-                  <li id="sqlite-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/sqlite.svg" alt="Python">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="sqlite-icon">
-                    SQLite
-                  </div>
-                  <li id="sass-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/sass.svg" alt="Python">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="sass-icon">
-                    Sass
-                  </div>
-                  <li id="socket-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/socket-io.svg" alt="socket.io">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="socket-icon">
-                    Socket.io
-                  </div>
-                  <li id="matlab-icon" class="language-icon tech-icon-wrapper">
-                    <img class="tech-icon" src="images/matlab.png" alt="MATLAB">
-                  </li>
-                  <div class="mdl-tooltip" data-mdl-for="matlab-icon">
-                    MATLAB
-                  </div>
-                </ul>
-              </div>
+          <!--
+            <h2 class="mdl-card__title-text">Qualifications</h2>
+            <div class="mdl-card__supporting-text no-left-padding no-top-padding">
+              <ul>
+                <li>Bachelor's Degree in Mechanical Engineering (Queensland University of Technology)</li>
+                <li>Front-End Development Certificate (FreeCodeCamp)</li>
+                <li>CS50x - Introduction to Computer Science (Harvard University)</li>
+                <li>M101x - Introduction to MongoDB using the MEAN Stack (edX)</li>
+                <li>Algorithms, Part I (Princeton University)</li>
+                <li>Machine Learning (Stanford University)</li>
+              </ul>
+            </div>
+          -->
+            <div class="mdl-card__supporting-text no-left-padding no-top-padding">
+              <h2 class="subtitle mdl-card__title-text">Languages, Frameworks & Libraries</h2>
+              <ul class="tech-icon-container">
+                <li id="html-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/html5.svg" alt="HTML5">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="html-icon">
+                  HTML5
+                </div>
+                <li id="css-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/css3.svg" alt="CSS3">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="css-icon">
+                  CSS3
+                </div>
+                <li id="js-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/js.png" alt="Javascript">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="js-icon">
+                  JavaScript/ES6
+                </div>
+                <li id="jquery-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/jquery.svg" alt="jQuery">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="jquery-icon">
+                  jQuery
+                </div>
+                <li id="react-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon react-logo" src="images/react.svg" alt="react">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="react-icon">
+                  React
+                </div>
+                <li id="node-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/nodejs.svg" alt="node.js">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="node-icon">
+                  NodeJS + Express
+                </div>
+                <li id="python-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/python.svg" alt="Python">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="python-icon">
+                  Python
+                </div>
+                <li id="mongo-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/mongo.png" alt="mongoDB">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="mongo-icon">
+                  MongoDB + Mongoose
+                </div>
+                <li id="sqlite-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/sqlite.svg" alt="Python">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="sqlite-icon">
+                  SQLite
+                </div>
+                <li id="sass-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/sass.svg" alt="Python">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="sass-icon">
+                  Sass
+                </div>
+                <li id="socket-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/socket-io.svg" alt="socket.io">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="socket-icon">
+                  Socket.io
+                </div>
+                <li id="matlab-icon" class="language-icon tech-icon-wrapper">
+                  <img class="tech-icon" src="images/matlab.png" alt="MATLAB">
+                </li>
+                <div class="mdl-tooltip" data-mdl-for="matlab-icon">
+                  MATLAB
+                </div>
+              </ul>
             </div>
           </div>
         </div>
@@ -265,7 +243,6 @@
                 <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/js.png" alt="Javascript"></li>
                 <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/jquery.svg" alt="jQuery"></li>
                 <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/python.svg" alt="Python"></li>
-                <li class="language-icon-inner tech-icon-wrapper small-margin"><img class="tech-icon" src="images/sqlite.svg" alt="SQLite"></li>
               </ul>
             </div>
             <div class="mdl-card__actions mdl-card--border">
@@ -553,7 +530,7 @@
           </div>
         </div>
         <div class="btnWrapper">
-          <a class="scroll" href="#aboutMe">
+          <a class="scroll" href="#top">
             <button class="btn2 mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
             Back to top
             </button>
@@ -573,6 +550,7 @@
             <li class="tech-icon-wrapper icon-footer"><a href="https://github.com/Caleb-Ellis" target="_blank"><img class="tech-icon" src="images/github.svg"></a></li>
             <li class="tech-icon-wrapper icon-footer"><a href="https://www.linkedin.com/in/caleb-ellis/" target="_blank"><img class="tech-icon" src="images/linkedin.svg"></a></li>
             <li class="tech-icon-wrapper icon-footer"><a href="https://codepen.io/calebellis/" target="_blank"><img class="tech-icon" src="images/codepen.png"></a></li>
+            <li class="tech-icon-wrapper icon-footer"><a href="" target="_blank"><img class="tech-icon" src="images/resume.png"></a></li>
           </ul>
         </div>
       </footer>
@@ -581,6 +559,8 @@
 
   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://bowercdn.net/c/jquery-mousewheel-3.1.13/jquery.mousewheel.min.js"></script>
   <script src="js/index.js"></script>
 
 </body>
