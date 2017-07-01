@@ -109,7 +109,7 @@ body {
   color: #000;
   border-radius: 2px;
   margin: 0;
-  padding: 2px 10px;
+  padding: 2px 8px;
   font-family: Raleway,Open Sans,sans-serif;
   font-weight: 700;
 }
@@ -348,11 +348,6 @@ footer {
   .mdl-cell--4-col, .mdl-cell--4-col-tablet.mdl-cell--4-col-tablet {
     width: calc(100% - 16px);
   }
-  img.aboutMeImg {
-    width: auto;
-    height: auto;
-    max-height: 50vh;
-  }
 }
 
 @media (max-width: 839px) {
@@ -372,5 +367,10 @@ footer {
   }
   .mdl-typography--display-2, .mdl-typography--display-2-color-contrast {
     font-size: 32px;
+  }
+  img.aboutMeImg {
+    width: auto;
+    height: auto;
+    max-height: 30vh;
   }
 }
