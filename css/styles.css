@@ -6,6 +6,17 @@ footer {
   background-size: cover;
 }
 
+.mobile-social {
+  padding: 0;
+  font-size: 34px;
+  display: none;
+}
+
+.icon {
+  color: #fff;
+  margin: 0 10px;
+}
+
 .social-buttons {
   z-index: 999;
   position: fixed;
@@ -31,17 +42,23 @@ footer {
 	background: url('../images/loader.svg') 50% 50% no-repeat rgb(249,249,249);
 }
 
+.introWrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#2eb8c1,#3ddadb);
+}
+
 .startWrapper {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   justify-content: center;
   min-height: 100vh;
-  background-image: url("../images/14 - 113.png");
-  background-attachment: fixed;
+  background-image: url("../images/bg.png");
   background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .sectionWrapper {
@@ -109,23 +126,17 @@ footer {
   box-sizing: border-box;
 }
 
-.meBig {
-  font-size: 72px;
-}
-
 .me {
   color: #fff;
-  text-shadow:
-    -1px -1px 0 rgba(0,0,0,0.1),
-    1px -1px 0 rgba(0,0,0,0.1),
-    -1px 1px 0 rgba(0,0,0,0.1),
-    1px 1px 0 rgba(0,0,0,0.1);
   opacity: 1;
-  margin: 15px auto;
+  margin: 5px auto;
   text-align: center;
 }
 
-
+.meBig {
+  font-size: 72px;
+  margin: 20px auto;
+}
 
 .tech-icon {
   margin: auto 3px;
@@ -336,13 +347,6 @@ img.article-image {
   .meBig {
     font-size: 60px;
   }
-  .me {
-    text-shadow:
-      -1px -1px 0 rgba(0,0,0,0.5),
-      1px -1px 0 rgba(0,0,0,0.5),
-      -1px 1px 0 rgba(0,0,0,0.5),
-      1px 1px 0 rgba(0,0,0,0.5);
-  }
   .startWrapper {
     background-attachment: scroll;
   }
@@ -382,5 +386,8 @@ img.article-image {
     box-sizing: border-box;
     width: 100%;
     text-align: justify;
+  }
+  .mobile-social {
+    display: block;
   }
 }
