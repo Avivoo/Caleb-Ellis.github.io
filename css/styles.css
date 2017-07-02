@@ -122,6 +122,7 @@ footer {
     1px 1px 0 rgba(0,0,0,0.1);
   opacity: 1;
   margin: 15px auto;
+  text-align: center;
 }
 
 
@@ -285,6 +286,10 @@ img.article-image {
   justify-content: space-around;
 }
 
+.aboutMeText {
+
+}
+
 .subtitle {
   align-self: flex-start;
   font-weight: 400;
@@ -363,5 +368,17 @@ img.article-image {
   }
   .mdl-mini-footer__right-section {
     display: inline-block;
+  }
+  .no-left-padding {
+    padding-right: 0;
+  }
+  .mdl-card__supporting-text {
+    width: 90%;
+    text-align: justify;
+  }
+  .aboutMeText {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: justify;
   }
 }

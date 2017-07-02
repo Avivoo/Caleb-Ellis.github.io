@@ -8,7 +8,6 @@ function scrollTo(id) {
   $(".mdl-layout__content").animate({scrollTop:position}, speed, "swing", function() {
     allowAutoScroll = true;
   });
-  console.log(allowAutoScroll);
 }
 
 $('a.scroll').click(function(){
