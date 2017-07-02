@@ -142,12 +142,12 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #000;
+  color: rgba(0,0,0,0.54);
+  font-weight: 400;
+  font-size: 1rem;
   border-radius: 2px;
   margin: 0;
   padding: 2px 8px;
-  font-family: Raleway,Open Sans,sans-serif;
-  font-weight: 700;
 }
 
 .tech-icon-container {
@@ -163,6 +163,8 @@ footer {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-family: "Helvetica","Arial",sans-serif;
+  font-weight: 400;
 }
 
 .small-margin {
@@ -315,8 +317,8 @@ img.article-image {
   display: block;
 }
 
-.initSocial {
-  margin: 15px auto;
+#mailLink {
+  color: rgba(0,0,0,0.54);
 }
 
 @keyframes react-logo-spin {

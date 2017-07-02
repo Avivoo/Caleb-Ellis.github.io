@@ -509,20 +509,31 @@
           <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
             <div class="mdl-card__supporting-text">
               <p class="contact-text">
-                Have a web development or programming problem you want solved? Let me help.
+                Contact me via email or phone:
+                <ul class="tech-icon-container">
+                  <li class="language-icon-inner tech-icon-wrapper">
+                    <img class="tech-icon" src="images/email.svg" alt="email"><a id="mailLink" href="mailto:calebellis2805@gmail.com">calebellis2805@gmail.com</a>
+                  </li>
+                  <li class="language-icon-inner tech-icon-wrapper">
+                    <img class="tech-icon" src="images/phone.svg" alt="phone">+44-20-07-XXXX-XXXX
+                  </li>
+                </ul>
               </p>
-              <form action="#" class="">
+              <p class="contact-text">
+                Or fill out the following form:
+              </p>
+              <form action="mailto:calebellis2805@gmail.com" method="post" enctype="text/plain">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                  <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" name="name" id="Name">
                   <label class="mdl-textfield__label" for="Name">Name...</label>
                   <span class="mdl-textfield__error">Letters and spaces only</span>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="text" id="Email">
+                  <input class="mdl-textfield__input" type="text" name="mail" id="Email">
                   <label class="mdl-textfield__label" for="Email">Email...</label>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
+                  <textarea class="mdl-textfield__input" type="text" rows="5" name="comment" id="note"></textarea>
                   <label class="mdl-textfield__label" for="note">Enter note</label>
                 </div>
                 <p>
