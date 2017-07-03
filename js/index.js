@@ -24,13 +24,6 @@ $('#top').on('mousewheel', function(e) {
   }
 });
 
-$('#aboutMe').on('mousewheel', function(e) {
-  if (allowAutoScroll === true && e.deltaY <= 0) {
-    allowAutoScroll = false;
-    scrollTo('#fullStack');
-  }
-});
-
 $(window).on('load', function() {
 	$(".loader").fadeOut("slow");
   window.sr = ScrollReveal();
