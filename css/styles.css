@@ -12,6 +12,7 @@ a {
 }
 
 .mobile-social {
+  list-style: none;
   padding: 0;
   font-size: 34px;
   display: none;
@@ -370,6 +371,6 @@ img.article-image {
     text-align: justify;
   }
   .mobile-social {
-    display: block;
+    display: flex;
   }
 }
