@@ -372,5 +372,6 @@ img.article-image {
   }
   .mobile-social {
     display: flex;
+    justify-content: center;
   }
 }
