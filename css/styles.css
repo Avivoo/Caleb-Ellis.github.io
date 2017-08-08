@@ -75,13 +75,14 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .btnWrapper {
   position: relative;
   display: flex;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .scrollBtn {

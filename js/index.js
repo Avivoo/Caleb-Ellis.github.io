@@ -17,13 +17,6 @@ $('a.scroll').click(function(){
   }
 });
 
-$('#top').on('mousewheel', function(e) {
-  if (allowAutoScroll === true && e.deltaY <= 0 && window.innerWidth > 839 ) {
-    allowAutoScroll = false;
-    scrollTo('#aboutMe');
-  }
-});
-
 $(window).on('load', function() {
 	$(".loader").fadeOut("slow");
   window.sr = ScrollReveal();
