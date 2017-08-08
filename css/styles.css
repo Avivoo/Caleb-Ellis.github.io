@@ -120,6 +120,24 @@ footer a {
   text-align: center;
 }
 
+.down-arrow {
+  color: #fff;
+  opacity: 0.5;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  transition: all .2s;
+}
+
+.down-arrow:hover {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+.end {
+  align-self: flex-end;
+}
+
 .meBig {
   font-size: 72px;
   margin: 20px auto;
@@ -342,7 +360,7 @@ img.article-image {
     height: auto;
     margin: 0;
   }
-  .btnWrapper, .btnWrapperStart, #redundant {
+  .btnWrapper, .btnWrapperStart, .down-arrow, #redundant {
     display: none;
   }
   .aboutMeImgContainer {
