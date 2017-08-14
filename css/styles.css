@@ -58,7 +58,7 @@ footer a {
   box-sizing: border-box;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#2eb8c1,#3ddadb);
+  background: linear-gradient(#0990cc,#3ddadb);
 }
 
 .startWrapper {
@@ -345,6 +345,9 @@ img.article-image {
 @media (max-width: 839px) {
   .meBig {
     font-size: 60px;
+  }
+  .introWrapper {
+    background: #3ddadb;
   }
   .startWrapper {
     background-attachment: scroll;
