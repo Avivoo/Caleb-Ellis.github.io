@@ -305,10 +305,6 @@ img.article-image {
   justify-content: space-around;
 }
 
-.aboutMeText {
-
-}
-
 .subtitle {
   align-self: flex-start;
   font-weight: 400;
@@ -319,19 +315,6 @@ img.article-image {
 .aboutMeImgContainer {
   display: flex;
   align-items: center;
-}
-
-.carouselCard {
-  width: calc(100% - 16px);
-  height: 570px;
-}
-
-.owl-carousel .owl-item .tech-icon-container img {
-  width: inherit;
-}
-
-.owl-carousel.off {
-  display: block;
 }
 
 #mailLink {

@@ -26,26 +26,3 @@ $(window).on('load', function() {
     distance: '10vh'
   }, 100);
 });
-
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-    loop: false,
-    responsiveClass: true,
-    nav: true,
-    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-    responsive: {
-      0: {
-        items: 1,
-        slideBy: 1
-      },
-      480: {
-        items: 2,
-        slideBy: 2
-      },
-      840: {
-        items: 3,
-        slideBy: 3
-      }
-    }
-  });
-});
